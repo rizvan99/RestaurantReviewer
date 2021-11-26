@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/arrow"
+            android:background="@color/white"
+            android:onClick="onClickBack"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pin"
+            android:background="@color/white"
+            android:onClick="onClickLocation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/llButtons">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/restaurant_name"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/llStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/restaurant_address"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/opening_hours"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/tvOpeningHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restaurant_opening_hours"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/reviews"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibAdd"
+        android:onClick="onClickAddReview"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/add"
+        android:layout_alignBottom="@id/llMain"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/llMain"
+        android:foreground="@drawable/box_border"/>
+
+</RelativeLayout>

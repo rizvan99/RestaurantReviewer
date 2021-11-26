@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ALL_RESTAURANTS_INTENT">allrestaurants</string>
+    <string name="RESTAURANT_DETAILS_INTENT">restaurant</string>
+    <string name="REVIEW_INTENT">review</string>
+    <string name="ERROR_INTENT">error</string>
+    <string name="MAP_GLOBAL">mapGlobal</string>
+    <string name="MAP_SINGLE">mapSingle</string>
+</resources>

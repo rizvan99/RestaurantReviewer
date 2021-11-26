@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_map"
+        android:title="@string/menu_map"
+        app:showAsAction="always"/>
+    <item android:id="@+id/menu_filter"
+        android:title="@string/menu_filter"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/filter_reset"
+                android:title="@string/filter_reset"/>
+            <item android:id="@+id/filter_byname"
+                android:title="@string/filter_byname">
+                <menu>
+                    <item android:id="@+id/filter_byname_asc"
+                        android:title="@string/filter_byname_asc"/>
+                    <item android:id="@+id/filter_byname_desc"
+                        android:title="@string/filter_byname_desc"/>
+                </menu>
+            </item>
+            <item android:id="@+id/filter_byrating"
+                android:title="@string/filter_byrating">
+                <menu>
+                    <item android:id="@+id/filter_byrating_asc"
+                        android:title="@string/filter_byrating_asc"/>
+                    <item android:id="@+id/filter_byrating_desc"
+                        android:title="@string/filter_byrating_desc"/>
+                </menu>
+            </item>
+            <item android:id="@+id/filter_minRating"
+                android:title="@string/filter_minRating">
+                <menu>
+                    <item android:id="@+id/filter_minRating_2"
+                        android:title="@string/filter_minRating_2"/>
+                    <item android:id="@+id/filter_minRating_3"
+                        android:title="@string/filter_minRating_3"/>
+                    <item android:id="@+id/filter_minRating_4"
+                        android:title="@string/filter_minRating_4"/>
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>
